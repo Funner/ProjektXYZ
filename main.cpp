@@ -5,7 +5,7 @@ using namespace std;
 class Postava
 {
 public:
-  Postava();
+	Postava();
 	~Postava(){}
 	
 	int ZjistiLevel(){return level;}
@@ -63,5 +63,11 @@ void Inicializace(int level, int rasa, string prezdivka, double sila, double int
 {
 	Postava *ukPostava = new Postava();
 	ukPostava->NastavLevel(level);
-
+	ukPostava->NastavRasu(rasa);
+	ukPostava->NastavPrezdivku(prezdivka);
+	ukPostava->NastavSilu(sila);
+	ukPostava->NastavInteligenci(inteligence);
+	ukPostava->NastavZdravi(zdravi);
+	ukPostava->NastavBrneni(brneni);
+	ukPostava->NastavZkusenosti(zkusenosti);
 }
